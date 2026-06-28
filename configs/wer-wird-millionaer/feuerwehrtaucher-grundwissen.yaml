@@ -1,0 +1,199 @@
+title: "Feuerwehrtaucher – Grundwissen"
+description: "15 Fragen zu Tauchphysik, Medizin, Einsatzlehre, Geräten und Vorschriften nach FwDV 8"
+
+questions:
+
+# --- Frage 1: Für 100 € (sehr leicht) ---
+- question: "Welche maximale Tauchtiefe gilt im Regelfall für den Feuerwehrtaucher Stufe 1?"
+  answers:
+  - "5 m"   # A
+  - "10 m"  # B
+  - "20 m"  # C
+  - "30 m"  # D
+  correct: 1
+  jokers:
+    audience: [6, 78, 11, 5]
+    phone: "Das ist 10 m – Stufe 1 ist nach FwDV 8 auf 10 m begrenzt. Antwort B!"
+    additional: "10 m, Antwort B. Stufe 2 darf bis 20 m."
+
+# --- Frage 2: Für 200 € (sehr leicht) ---
+- question: "Was bedeutet ein einmaliger Leinenzug (1×) vom Taucher zum Signalmann?"
+  answers:
+  - "Alles in Ordnung" # A
+  - "Notsignal"        # B
+  - "Nach links"       # C
+  - "Austauchen"       # D
+  correct: 1
+  jokers:
+    audience: [5, 82, 7, 6]
+    phone: "1× ist das Notsignal – Antwort B. Merkhilfe: einmal = Hilfe!"
+    additional: "Notsignal, Antwort B."
+
+# --- Frage 3: Für 300 € (leicht) ---
+- question: "Was besagt die Drittelregel (Rule of Thirds) beim Atemgasmanagement?"
+  answers:
+  - "1/3 Reserve, 2/3 für den gesamten Tauchgang"                # A
+  - "Je 1/3 für Hinweg, Rückweg und Notfallreserve"              # B
+  - "Mindestens 1/3 des Startdrucks beim Auftauchen behalten"    # C
+  - "Drei Druckkontrollpunkte beim Abstieg"                      # D
+  correct: 1
+  jokers:
+    audience: [8, 74, 12, 6]
+    phone: "Je 1/3 für Hinweg, Rückweg und Notfallreserve – Antwort B. Das Grundprinzip der Gasplanung."
+    additional: "Antwort B – Hinweg, Rückweg, Reserve."
+
+# --- Frage 4: Für 500 € (leicht) ---
+- question: "Was passiert am Ventil einer Tauchflasche, wenn sie schnell geöffnet wird (Joule-Thomson-Effekt)?"
+  answers:
+  - "Das Ventil wird warm"   # A
+  - "Das Ventil wird kalt"   # B
+  - "Der Druck steigt kurz"  # C
+  - "Die Flasche leckt"      # D
+  correct: 1
+  jokers:
+    audience: [11, 76, 8, 5]
+    phone: "Das Ventil wird kalt – bei schneller Gasausdehnung kühlt das Gas ab. Antwort B."
+    additional: "Kalt, Antwort B – Joule-Thomson-Effekt: Expansion kühlt."
+
+# --- Frage 5: Für 1.000 € ★ SICHERHEITSSTUFE ---
+- question: "Welche arbeitsmedizinische Vorsorgeuntersuchung ist für die Tauchtauglichkeit maßgeblich?"
+  answers:
+  - "G26" # A
+  - "G31" # B
+  - "G41" # C
+  - "G25" # D
+  correct: 1
+  jokers:
+    audience: [12, 68, 9, 11]
+    phone: "G31 – das ist die Tauglichkeitsuntersuchung für Überdruck. Antwort B."
+    additional: "G31, Antwort B. Steht für Tauglichkeit unter Überdruck."
+
+# --- Frage 6: Für 2.000 € (mittel) ---
+- question: "Welches Gesetz beschreibt die Beziehung zwischen Druck und Volumen eines Gases bei gleichbleibender Temperatur?"
+  answers:
+  - "Gesetz von Dalton"         # A
+  - "Gesetz von Henry"          # B
+  - "Gesetz von Boyle-Mariotte" # C
+  - "Gesetz von Archimedes"     # D
+  correct: 2
+  jokers:
+    audience: [12, 16, 58, 14]
+    phone: "Boyle-Mariotte – Druck mal Volumen ist konstant. Antwort C."
+    additional: "Boyle-Mariotte, Antwort C."
+
+# --- Frage 7: Für 4.000 € (mittel) ---
+- question: "Was ist die richtige erste Maßnahme bei Anzeichen einer Stickstoffnarkose (Tiefenrausch)?"
+  answers:
+  - "Sauerstoff aus der Flasche einatmen"                           # A
+  - "An der Tauchstelle verbleiben und abwarten"                    # B
+  - "Kontrolliert auftauchen – Symptome verschwinden sofort"        # C
+  - "Den Signalmann per Leinenzug alarmieren und bleiben"          # D
+  correct: 2
+  jokers:
+    audience: [7, 6, 77, 10]
+    phone: "Auftauchen – die Symptome verschwinden beim Aufsteigen sofort. Antwort C."
+    additional: "Antwort C – auftauchen. Kein Medikament, keine Wartezeit."
+
+# --- Frage 8: Für 8.000 € (mittel) ---
+- question: "Wie hoch ist das Atemminutenvolumen (AMV) bei mittlerer körperlicher Arbeit unter Wasser etwa?"
+  answers:
+  - "5–10 L/min"  # A
+  - "15–20 L/min" # B
+  - "25–40 L/min" # C
+  - "60–80 L/min" # D
+  correct: 2
+  jokers:
+    audience: [5, 18, 63, 14]
+    phone: "25 bis 40 Liter pro Minute bei mittlerer Arbeit – Antwort C."
+    additional: "25–40 L/min, Antwort C. Im Ruhezustand nur 15–20 L/min."
+
+# --- Frage 9: Für 16.000 € ★ SICHERHEITSSTUFE (nur Klassisch) ---
+- question: "Nach welcher Norm sind die in der Feuerwehr verwendeten autonomen Leichttauchgeräte zugelassen?"
+  answers:
+  - "DIN EN 137"   # A
+  - "DIN EN 250"   # B
+  - "DIN EN 12628" # C
+  - "DIN EN 361"   # D
+  correct: 1
+  jokers:
+    audience: [16, 54, 18, 12]
+    phone: "DIN EN 250 – die Norm für Druckluft-Tauchgeräte. Antwort B."
+    additional: "DIN EN 250, Antwort B. EN 137 gilt für umgebungsluftunabhängigen Atemschutz."
+
+# --- Frage 10: Für 32.000 € (schwerer) ---
+- question: "Zwei Tauchgänge innerhalb welchen Zeitraums gelten nach FwDV 8 als Wiederholungstauchgang?"
+  answers:
+  - "6 Stunden"  # A
+  - "12 Stunden" # B
+  - "24 Stunden" # C
+  - "48 Stunden" # D
+  correct: 1
+  jokers:
+    audience: [18, 61, 16, 5]
+    phone: "12 Stunden – innerhalb von 12 Stunden nach FwDV 8 Anlage 3. Antwort B."
+    additional: "12 Stunden, Antwort B."
+
+# --- Frage 11: Für 64.000 € (schwerer) ---
+- question: "Was berücksichtigt das Mindestatemgas (Turn Pressure) beim Feuerwehrtauchen?"
+  answers:
+  - "Nur den Aufstieg des Tauchers allein"                                             # A
+  - "2 Minuten am tiefsten Punkt zur Problembewältigung + Aufstieg für beide Taucher" # B
+  - "Den Gasverbrauch bis zur Oberfläche ohne Sicherheitsreserve"                    # C
+  - "10 Minuten Grundzeit plus den Aufstieg"                                          # D
+  correct: 1
+  jokers:
+    audience: [12, 66, 13, 9]
+    phone: "2 Minuten am Grund plus Aufstieg für beide Taucher – Antwort B. Immer für beide planen."
+    additional: "2 Min. Grund + Aufstieg beider Taucher, Antwort B."
+
+# --- Frage 12: Für 125.000 € (schwer) ---
+- question: "Wie hoch ist die Wärmeleitfähigkeit von Wasser etwa im Vergleich zu Luft?"
+  answers:
+  - "Gleich hoch"  # A
+  - "Ca. 5-fach"   # B
+  - "Ca. 25-fach"  # C
+  - "Ca. 100-fach" # D
+  correct: 2
+  jokers:
+    audience: [5, 19, 49, 27]
+    phone: "Ca. 25-fach! Daher kühlt man im Wasser so schnell aus. Antwort C."
+    additional: "25-fach, Antwort C – weshalb der Trockentauchanzug Pflicht ist."
+
+# --- Frage 13: Für 250.000 € (sehr schwer) ---
+- question: "Welches Kürzel fasst die Symptome einer Sauerstoffvergiftung zusammen?"
+  answers:
+  - "ABCDE (Airway, Breathing, Circulation, Disability, Exposure)"       # A
+  - "START (Simple Triage And Rapid Treatment)"                           # B
+  - "VENTID (Visual, Ears, Nausea, Twitching, Irritability, Dizziness)"  # C
+  - "SAMPLE (Symptoms, Allergies, Medications, Prior, Last, Events)"     # D
+  correct: 2
+  jokers:
+    audience: [11, 8, 68, 13]
+    phone: "VENTID – Antwort C: Visual, Ears, Nausea, Twitching, Irritability, Dizziness."
+    additional: "VENTID, Antwort C."
+
+# --- Frage 14: Für 500.000 € (sehr schwer) ---
+- question: "Wie hoch ist der Sauerstoff-Partialdruck (ppO₂) bei 30 m Tiefe mit Atemluft (21 % O₂)?"
+  answers:
+  - "0,63 bar" # A
+  - "0,84 bar" # B
+  - "1,05 bar" # C
+  - "1,26 bar" # D
+  correct: 1
+  jokers:
+    audience: [14, 56, 21, 9]
+    phone: "0,84 bar – Formel: 4 bar Absolutdruck × 0,21 = 0,84 bar. Antwort B."
+    additional: "0,84 bar, Antwort B. Bei 20 m (3 bar) wären es 0,63 bar."
+
+# --- Frage 15: 1.000.000 € – DIE MILLIONENFRAGE! ---
+- question: "Ab welcher Strömungsgeschwindigkeit ist ein Taucheinsatz nach FwDV 8 grundsätzlich abzubrechen?"
+  answers:
+  - "0,5 m/s" # A
+  - "1,0 m/s" # B
+  - "1,5 m/s" # C
+  - "2,0 m/s" # D
+  correct: 1
+  jokers:
+    audience: [22, 44, 21, 13]
+    phone: "1 m/s nach FwDV 8 §6.7.1 – bei mehr als 1 m/s ist einzustellen. Antwort B."
+    additional: "1,0 m/s, Antwort B."

@@ -1,0 +1,25 @@
+name: Validate HTML
+
+on:
+  push:
+    paths:
+      - 'games/**/index.html'
+      - 'tools/**/index.html'
+      - '.htmlvalidate.json'
+      - '.github/workflows/validate-html.yml'
+  pull_request:
+    paths:
+      - 'games/**/index.html'
+      - 'tools/**/index.html'
+      - '.htmlvalidate.json'
+      - '.github/workflows/validate-html.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npx --yes html-validate "games/**/index.html" "tools/**/index.html"

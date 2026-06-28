@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -728,9 +728,9 @@
   <div class="teams-section">
     <div class="section-title">Teams</div>
     <div class="team-count-row">
-      <button class="btn-count" id="btn-teams-minus">−</button>
+      <button type="button" class="btn-count" id="btn-teams-minus">−</button>
       <span id="team-count-display">2 Teams</span>
-      <button class="btn-count" id="btn-teams-plus">+</button>
+      <button type="button" class="btn-count" id="btn-teams-plus">+</button>
     </div>
     <div class="teams-grid" id="teams-grid"></div>
   </div>
@@ -749,7 +749,7 @@
     </div>
   </div>
 
-  <button id="btn-start" onclick="startGame()" disabled>Spiel starten</button>
+  <button type="button" id="btn-start" onclick="startGame()" disabled>Spiel starten</button>
 </div>
 
 
@@ -758,9 +758,9 @@
   <div id="topbar">
     <div id="scores-container"></div>
     <div class="topbar-actions">
-      <button class="btn-topbar" id="btn-sound" onclick="toggleSound()" title="Ton ein/aus">🔇</button>
-      <button class="btn-topbar" onclick="saveState()">💾 Speichern</button>
-      <button class="btn-topbar" onclick="confirmNewGame()">✕ Neu</button>
+      <button type="button" class="btn-topbar" id="btn-sound" onclick="toggleSound()" title="Ton ein/aus">🔇</button>
+      <button type="button" class="btn-topbar" onclick="saveState()">💾 Speichern</button>
+      <button type="button" class="btn-topbar" onclick="confirmNewGame()">✕ Neu</button>
     </div>
   </div>
   <div id="board-container">
@@ -794,22 +794,22 @@
     <div class="buzzer-phase-label">Richtig oder falsch?</div>
     <div id="judge-team-name" class="judge-team-name"></div>
     <div class="judge-btns">
-      <button class="btn-judge correct" id="btn-judge-correct">✓ Richtig</button>
-      <button class="btn-judge wrong" id="btn-judge-wrong">✗ Falsch</button>
+      <button type="button" class="btn-judge correct" id="btn-judge-correct">✓ Richtig</button>
+      <button type="button" class="btn-judge wrong" id="btn-judge-wrong">✗ Falsch</button>
     </div>
-    <button class="btn-judge-back" id="btn-judge-back">← Anderes Team wählen</button>
+    <button type="button" class="btn-judge-back" id="btn-judge-back">← Anderes Team wählen</button>
   </div>
 
   <!-- Phase 3: Result confirmation -->
   <div id="buzzer-phase-3" class="buzzer-phase">
     <div id="result-lines" class="result-lines"></div>
-    <button class="btn-overlay" id="btn-phase3-continue" onclick="onWrongContinue()">Weiter →</button>
+    <button type="button" class="btn-overlay" id="btn-phase3-continue" onclick="onWrongContinue()">Weiter →</button>
   </div>
 
   <div class="overlay-actions">
-    <button class="btn-overlay" id="btn-reveal" onclick="revealAnswer()">Auflösen</button>
-    <button class="btn-overlay" id="btn-nobody" onclick="noOneCorrect()">Niemand richtig</button>
-    <button class="btn-overlay primary" id="btn-close" onclick="closeQuestion()">Zurück zum Board</button>
+    <button type="button" class="btn-overlay" id="btn-reveal" onclick="revealAnswer()">Auflösen</button>
+    <button type="button" class="btn-overlay" id="btn-nobody" onclick="noOneCorrect()">Niemand richtig</button>
+    <button type="button" class="btn-overlay primary" id="btn-close" onclick="closeQuestion()">Zurück zum Board</button>
   </div>
 </div>
 
@@ -820,8 +820,8 @@
   <div id="end-winner"></div>
   <div class="end-rankings" id="end-rankings"></div>
   <div class="end-actions">
-    <button class="btn-end primary" onclick="resetGame()">Neues Spiel</button>
-    <button class="btn-end secondary" onclick="saveState()">💾 Ergebnis speichern</button>
+    <button type="button" class="btn-end primary" onclick="resetGame()">Neues Spiel</button>
+    <button type="button" class="btn-end secondary" onclick="saveState()">💾 Ergebnis speichern</button>
   </div>
 </div>
 
