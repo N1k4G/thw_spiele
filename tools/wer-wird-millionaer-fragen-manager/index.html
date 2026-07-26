@@ -231,6 +231,11 @@
       color: var(--gold);
     }
 
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
     .question-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -627,9 +632,9 @@
       <div class="header-sub">Wer wird Millionär? – Konfigurationsdatei erstellen &amp; bearbeiten</div>
     </div>
     <div class="header-actions">
-      <button class="btn btn-outline" onclick="togglePreview()">👁 YAML Vorschau</button>
-      <button class="btn btn-outline" onclick="validateAll()">✔ Validieren</button>
-      <button class="btn btn-gold" onclick="exportYaml()">💾 Als YAML exportieren</button>
+      <button type="button" class="btn btn-outline" onclick="togglePreview()">👁 YAML Vorschau</button>
+      <button type="button" class="btn btn-outline" onclick="validateAll()">✔ Validieren</button>
+      <button type="button" class="btn btn-gold" onclick="exportYaml()">💾 Als YAML exportieren</button>
     </div>
   </header>
 
@@ -667,7 +672,7 @@
     <!-- ===== QUESTION CARDS ===== -->
     <div class="questions-header">
       <h2>15 Fragen</h2>
-      <span id="valid-count" style="font-size:0.8rem;color:var(--muted)">0 / 15 vollständig</span>
+      <span id="valid-count" class="stat-label">0 / 15 vollständig</span>
     </div>
     <div id="questions-container"></div>
 
@@ -681,9 +686,9 @@
   <div class="toolbar">
     <span class="question-count" id="toolbar-info"></span>
     <div class="toolbar-spacer"></div>
-    <button class="btn btn-outline" onclick="togglePreview()">👁 YAML Vorschau</button>
-    <button class="btn btn-outline" onclick="validateAll()">✔ Validieren</button>
-    <button class="btn btn-gold" onclick="exportYaml()">💾 Als YAML exportieren</button>
+    <button type="button" class="btn btn-outline" onclick="togglePreview()">👁 YAML Vorschau</button>
+    <button type="button" class="btn btn-outline" onclick="validateAll()">✔ Validieren</button>
+    <button type="button" class="btn btn-gold" onclick="exportYaml()">💾 Als YAML exportieren</button>
   </div>
 
   <script>

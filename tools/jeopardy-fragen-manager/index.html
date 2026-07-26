@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -231,6 +231,11 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--muted);
     }
 
     /* ===== CATEGORY CARD ===== */
@@ -510,9 +515,9 @@
       <div class="header-sub">Jeopardy! – Konfigurationsdatei erstellen &amp; bearbeiten</div>
     </div>
     <div class="header-actions">
-      <button class="btn btn-outline" onclick="togglePreview()">👁 YAML Vorschau</button>
-      <button class="btn btn-outline" onclick="validateAll()">✔ Validieren</button>
-      <button class="btn btn-blue" onclick="exportYaml()">💾 Als YAML exportieren</button>
+      <button type="button" class="btn btn-outline" onclick="togglePreview()">👁 YAML Vorschau</button>
+      <button type="button" class="btn btn-outline" onclick="validateAll()">✔ Validieren</button>
+      <button type="button" class="btn btn-blue" onclick="exportYaml()">💾 Als YAML exportieren</button>
     </div>
   </header>
 
@@ -550,8 +555,8 @@
     <div class="cats-header">
       <h2>Kategorien</h2>
       <div class="cats-header-right">
-        <span id="valid-count" style="font-size:0.8rem;color:var(--muted)">0 / 6 vollständig</span>
-        <button class="btn btn-outline btn-sm" id="add-cat-btn" onclick="addCategoryCard()">+ Kategorie</button>
+        <span id="valid-count" class="stat-label">0 / 6 vollständig</span>
+        <button type="button" class="btn btn-outline btn-sm" id="add-cat-btn" onclick="addCategoryCard()">+ Kategorie</button>
       </div>
     </div>
     <div id="categories-container"></div>
@@ -566,9 +571,9 @@
   <div class="toolbar">
     <span class="cat-count" id="toolbar-info"></span>
     <div class="toolbar-spacer"></div>
-    <button class="btn btn-outline" onclick="togglePreview()">👁 YAML Vorschau</button>
-    <button class="btn btn-outline" onclick="validateAll()">✔ Validieren</button>
-    <button class="btn btn-blue" onclick="exportYaml()">💾 Als YAML exportieren</button>
+    <button type="button" class="btn btn-outline" onclick="togglePreview()">👁 YAML Vorschau</button>
+    <button type="button" class="btn btn-outline" onclick="validateAll()">✔ Validieren</button>
+    <button type="button" class="btn btn-blue" onclick="exportYaml()">💾 Als YAML exportieren</button>
   </div>
 
   <script>

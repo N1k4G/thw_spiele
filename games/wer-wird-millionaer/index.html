@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -170,11 +170,13 @@
     }
 
     .variant-btn .vname {
+      display: block;
       font-weight: bold;
       margin-bottom: 0.3rem;
     }
 
     .variant-btn .vdesc {
+      display: block;
       font-size: 0.72rem;
       color: rgba(255, 255, 255, 0.55);
       line-height: 1.4;
@@ -736,32 +738,32 @@
     <div id="variant-choice">
       <h3>Spielvariante wählen:</h3>
       <div class="variant-row">
-        <button class="variant-btn" id="btn-classic" onclick="selectVariant('classic')">
-          <div class="vname">🎯 Klassisch</div>
-          <div class="vdesc">3 Joker · 2 Sicherheitsstufen<br>(1.000 € + 16.000 €)</div>
+        <button type="button" class="variant-btn" id="btn-classic" onclick="selectVariant('classic')">
+          <span class="vname">🎯 Klassisch</span>
+          <span class="vdesc">3 Joker · 2 Sicherheitsstufen<br>(1.000 € + 16.000 €)</span>
         </button>
-        <button class="variant-btn" id="btn-risk" onclick="selectVariant('risk')">
-          <div class="vname">⚡ Risiko</div>
-          <div class="vdesc">4 Joker · 1 Sicherheitsstufe<br>(1.000 €)</div>
+        <button type="button" class="variant-btn" id="btn-risk" onclick="selectVariant('risk')">
+          <span class="vname">⚡ Risiko</span>
+          <span class="vdesc">4 Joker · 1 Sicherheitsstufe<br>(1.000 €)</span>
         </button>
       </div>
     </div>
 
-    <button class="btn-gold" id="btn-go" onclick="startGame()">Spiel starten!</button>
+    <button type="button" class="btn-gold" id="btn-go" onclick="startGame()">Spiel starten!</button>
     <div id="error-msg"></div>
   </div>
 
   <!-- ===== GAME SCREEN ===== -->
   <div id="screen-game" class="screen">
     <div class="topbar">
-      <button class="joker-btn" id="joker-fifty" onclick="useJoker('fifty_fifty')">50:50</button>
-      <button class="joker-btn" id="joker-audience" onclick="useJoker('audience')">👥 Publikum</button>
-      <button class="joker-btn" id="joker-phone" onclick="useJoker('phone')">📞 Telefon</button>
-      <button class="joker-btn" id="joker-additional" onclick="useJoker('additional')" style="display:none">🙋
+      <button type="button" class="joker-btn" id="joker-fifty" onclick="useJoker('fifty_fifty')">50:50</button>
+      <button type="button" class="joker-btn" id="joker-audience" onclick="useJoker('audience')">👥 Publikum</button>
+      <button type="button" class="joker-btn" id="joker-phone" onclick="useJoker('phone')">📞 Telefon</button>
+      <button type="button" class="joker-btn" id="joker-additional" onclick="useJoker('additional')" style="display:none">🙋
         Zusatz</button>
       <div class="tb-spacer"></div>
-      <button id="sound-btn" onclick="toggleSound()">🔇 Sound</button>
-      <button id="quit-btn" onclick="confirmQuit()">Aufhören</button>
+      <button type="button" id="sound-btn" onclick="toggleSound()">🔇 Sound</button>
+      <button type="button" id="quit-btn" onclick="confirmQuit()">Aufhören</button>
     </div>
 
     <div class="game-body">
@@ -771,21 +773,21 @@
         <div id="q-prize">Für 100 €</div>
         <div id="q-text">Frage wird geladen…</div>
         <div class="answers-grid">
-          <button class="answer-btn" id="ans-0" onclick="selectAnswer(0)">
+          <button type="button" class="answer-btn" id="ans-0" onclick="selectAnswer(0)">
             <span class="ans-letter">A</span><span class="ans-text"></span>
           </button>
-          <button class="answer-btn" id="ans-1" onclick="selectAnswer(1)">
+          <button type="button" class="answer-btn" id="ans-1" onclick="selectAnswer(1)">
             <span class="ans-letter">B</span><span class="ans-text"></span>
           </button>
-          <button class="answer-btn" id="ans-2" onclick="selectAnswer(2)">
+          <button type="button" class="answer-btn" id="ans-2" onclick="selectAnswer(2)">
             <span class="ans-letter">C</span><span class="ans-text"></span>
           </button>
-          <button class="answer-btn" id="ans-3" onclick="selectAnswer(3)">
+          <button type="button" class="answer-btn" id="ans-3" onclick="selectAnswer(3)">
             <span class="ans-letter">D</span><span class="ans-text"></span>
           </button>
         </div>
         <div id="continue-next" style="display:none">
-          <button class="btn-gold" onclick="nextContinueQuestion()">Nächste Frage →</button>
+          <button type="button" class="btn-gold" onclick="nextContinueQuestion()">Nächste Frage →</button>
         </div>
       </div>
       <div class="prize-ladder-panel" id="prize-ladder"></div>
@@ -799,12 +801,12 @@
     <div id="end-amount">1.000.000 €</div>
     <div id="end-summary"></div>
     <div class="end-buttons">
-      <button id="btn-save-state" class="btn-secondary" onclick="saveState()">💾 Spielstand speichern</button>
-      <button id="btn-retry" class="btn-secondary" onclick="retryGame()" style="display:none">🔄 Nochmal
+      <button type="button" id="btn-save-state" class="btn-secondary" onclick="saveState()">💾 Spielstand speichern</button>
+      <button type="button" id="btn-retry" class="btn-secondary" onclick="retryGame()" style="display:none">🔄 Nochmal
         versuchen</button>
-      <button id="btn-continue-play" class="btn-secondary" onclick="continueGame()" style="display:none">▶
+      <button type="button" id="btn-continue-play" class="btn-secondary" onclick="continueGame()" style="display:none">▶
         Weiterspielen</button>
-      <button class="btn-gold" onclick="resetGame()">Neues Spiel</button>
+      <button type="button" class="btn-gold" onclick="resetGame()">Neues Spiel</button>
     </div>
   </div>
 
